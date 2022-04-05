@@ -12,12 +12,15 @@ In this challenge we have an 2 hints and a challenge, all of the assets are in b
 ##### The assets:
 
 Challenge:
+
 ![](./challenge.bmp)
 
 First hint:
+
 ![](./first_hint.bmp)
 
 Second hint:
+
 ![](./second_hint.bmp)
 
 ##### Solution
@@ -35,6 +38,7 @@ IN_SECOND_HINT_MAKE_ODD_0_AND_EVEN_255
 ```
 
 Photo:
+
 ![](./first_hint_sol_2.png)
 
 ###### Second hint
@@ -48,6 +52,7 @@ LSBIT_STEGANOGRAPHY_OVER_TRIANGULAR_SERIES
 ```
 
 Photo:
+
 ![](./second_hint_sol.png)
 
 ###### Challenge
