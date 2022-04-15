@@ -11,13 +11,10 @@ Minor modifications were maded to the source code.
 
 ##### Message
 
-```
-Welcome to Computed Shopping Assistant II
-
-Sadly, some users found a way to abuse the system and use a secret coupon.
-This time, we have added a new coupon that can't be revealed!
-Note: the flag is in the format of CSA{...}
-```
+> Welcome to Computed Shopping Assistant II
+> Sadly, some users found a way to abuse the system and use a secret coupon.
+> This time, we have added a new coupon that can't be revealed!
+> Note: the flag is in the format of CSA{...}
 
 ```
 nc csa-2.csa-challenge.com 2222

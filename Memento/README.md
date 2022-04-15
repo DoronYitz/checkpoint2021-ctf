@@ -4,15 +4,13 @@
 
 ##### The message:
 
-```
-My good friend Leonard created this game.
-Leonard told me he hid a flag inside, but doesn’t remember exactly how.
-He also gave me the code of the server, so you can take a look.
-The flag is in the format CSA{...}
-The only possible characters inside {} are lowercase english letters and _ (no numbers, no
-uppercase, no special characters).
-You have only 5 attempts for submitting the flag.
-```
+> My good friend Leonard created this game.
+> Leonard told me he hid a flag inside, but doesn’t remember exactly how.
+> He also gave me the code of the server, so you can take a look.
+> The flag is in the format CSA{...}
+> The only possible characters inside {} are lowercase english letters and \_ (no numbers, no
+> uppercase, no special characters).
+> You have only 5 attempts for submitting the flag.
 
 ```
 http://memento.csa-challenge.com:8888/
@@ -109,6 +107,7 @@ Results:
 ```
 
 Next we got a kind of a puzzle -
+
 ```
 lvl0=["g","p","y"]#5
 lvl1=["e","n","w"]#3
