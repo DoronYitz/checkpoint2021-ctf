@@ -37,22 +37,22 @@ By reviewing the code we found out:
 
 ```
 
-bool can_edit_item(item\* item){
-if ((item->type == TYPE_UNDEFINED)) {
-printf("There is no item at selected index\n");
-return false;
-} else if
-(((item->type == TYPE_BREAD) && (item->grocery_item.amount_loaves > 0)) || ((item->type == TYPE_PASTA) && (item->grocery_item.amount_kilograms > 0)) ||
-((item->type == TYPE_SOUP) && (item->grocery_item.amount_liters > 0)) || ((item->type == TYPE_DRINK) && (item->grocery_item.amount_liters > 0)) ||
-((item->type == TYPE_VEGETABLE) && (item->grocery_item.amount_kilograms > 0)) || ((item->type = TYPE_FRUIT) && (item->grocery_item.amount_items > 0))) {
-return true;
-} else if ((item->type = TYPE_COUPON)) {
-printf("Item is a coupon!\n");
-return false;
-} else {
-printf("Invalid item type!\n");
-return false;
-}
+bool can_edit_item(item\* item) {
+    if ((item->type == TYPE_UNDEFINED)) {
+    printf("There is no item at selected index\n");
+    return false;
+  } else if
+    (((item->type == TYPE_BREAD) && (item->grocery_item.amount_loaves > 0)) || ((item->type == TYPE_PASTA) && (item->grocery_item.amount_kilograms > 0)) ||
+    ((item->type == TYPE_SOUP) && (item->grocery_item.amount_liters > 0)) || ((item->type == TYPE_DRINK) && (item->grocery_item.amount_liters > 0)) ||
+    ((item->type == TYPE_VEGETABLE) && (item->grocery_item.amount_kilograms > 0)) || ((item->type = TYPE_FRUIT) && (item->grocery_item.amount_items > 0))) {
+    return true;
+  } else if ((item->type = TYPE_COUPON)) {
+    printf("Item is a coupon!\n");
+    return false;
+  } else {
+    printf("Invalid item type!\n");
+    return false;
+  }
 }
 
 ```
@@ -68,31 +68,30 @@ One cause of the union - have_entered and amount_kilograms have the same allocat
 ```
 
 struct coupon_item {
-int discount_amount;
-int have_entered;
-int is_valid;
-int length;
-int expiration_day;
-int expiration_month;
-int expiration_year;
-char code[STRING_BUFFER_SIZE];
+  int discount_amount;
+  int have_entered;
+  int is_valid;
+  int length;
+  int expiration_day;
+  int expiration_month;
+  int expiration_year;
+  char code[STRING_BUFFER_SIZE];
 };
 
 struct grocery_item {
-int amount_grams; // deprecated - use kilograms instead
-int amount_kilograms;
-int amount_items;
-int amount_loaves;
-int amount_liters;
-char description[STRING_BUFFER_SIZE];
+  int amount_grams; // deprecated - use kilograms instead
+  int amount_kilograms;
+  int amount_items;
+  int amount_loaves;
+  int amount_liters;
+  char description[STRING_BUFFER_SIZE];
 };
 
 struct shopping_cart_item {
-enum item_type type;
-union {
-struct coupon_item coupon;
-struct grocery_item grocery_item;
-};
+  enum item_type type;
+  union {
+  struct coupon_item coupon;
+  struct grocery_item grocery_item;
 };
 
 ```
@@ -111,9 +110,5 @@ Plan:
 ```
 
 CSA{iN_L1nuX_1T_W0UlDnT_H4PP3N}
-
-```
-
-```
 
 ```
