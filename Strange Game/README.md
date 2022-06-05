@@ -1,4 +1,4 @@
-# Strange game
+#    Strange game
 
 ---
 
